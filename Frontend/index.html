@@ -5,46 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowi</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header> <!-- Header: la parte superior de la pagina-->
-        <h1>Flowi</h1>
-        <nav>
-            <a href="#Menu">Ir a Menu Principal</a>
-            <a href="#horario">Ir al Tutor personal</a>
-            <a href="#Avances del">Ir a ver metricas</a>
-
+    <h1>Flowi</h1>
+    <header class="BarraDeNavegacion"> <!-- Header: la parte superior de la pagina-->
+        <div class="LogoFlowi">
+            <img src="img/LogoFlowi.png" alt="Logo Flowi">
+        </div>
+        <!--Menu Central-->
+        <nav class="MenuCentral">
+            <a href="ElMetodo.html" class="activo">Quienes somos</a>
+            <a href="Herramientas.html">Herramientas</a>
         </nav>
+        <!--Botones de inicio-->
+        <div class="Acciones">
+            <button class=" btnSecundario">Entrar</button>
+            <button class=" btnPrimario">Registrarse</button>
+        </div>
     </header>
+
     <main> <!--Main: La parte donde se encuentra el contenido principal de la pagina-->
         <section id="hero"> <!--Seccion 1 (Hero): Bienvenida de la pagina-->
-            <h2>Bienvenidos a mi emprendimeinto de Aprendizaje</h2>
-            <p>Flowi es una plataforma que rasnforma la forma en la que aprendemos, te ayuda a aprender de forma
-                eficiente y potencia tu pensamiento critico</p>
+            <h2>Supera el bloqueo sin culpa</h2>
+            <p>No necesitas más motivación. Necesitas un primer paso claro. Flowi te acompaña para encontrarlo y seguir
+                avanzando.</p>
+
         </section>
 
         <!--Seccion 2 (Productos): Una seccion donde voy amostrar cuales son mis productos-->
         <section id="Herramientas">
-            <h2>Mis Productos</h2>
-
-
-            <article>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL08JWIlM5DmXpS_SLt86g5nDuxnTv-ixF3pYoUnJLsA&s=10"
-                    alt="Profesor">
-                <h3>Tutor Socratico</h3>
-                <p>Profesor que te ayuda a obtimizar tus sesiones de estudio!</p>
-
-            </article>
-
+            <h2>Funciones</h2>
+            <ul>
+                <li>Check-in</li>
+                <li>Next Step</li>
+                <li>Think</li>
+                <li>Hint</li>
+                <li>Reset</li>
+                <li>Streak</li>
+                <li>Journey</li>
+            </ul>
         </section>
-
-        <section>
-
-        </section>
-
-
     </main>
+
+    <footer class="FooterPrincipal">
+        <div class="FooterLogo">
+            <img src="img/LogoFlowi.png" alt="Logo Flowi">
+        </div>
+
+        <div class="FooterContacto">
+            <h3>Contacto</h3>
+            <p>📧 contacto@flowi.com</p>
+            <p>📍 Medellín, Colombia</p>
+        </div>
+
+        <div class="FooterEnlaces">
+            <h3>Síguenos</h3>
+            <a href="#">Instagram</a><br>
+            <a href="#">LinkedIn</a><br>
+            <a href="#">GitHub</a>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
