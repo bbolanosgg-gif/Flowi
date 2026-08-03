@@ -1,3 +1,93 @@
-h1 {
-    text-align: justify;
+.BarraDeNavegacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 15px 40px;
+    background-color: #F3F6FE;
+    overflow-x: auto;
+}
+
+.LogoFlowi {
+    flex: 0 0 auto;
+}
+
+.LogoFlowi img {
+    width: 170px;
+    height: auto;
+}
+
+.MenuCentral {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 10px;
+    background: #FCFCFD;
+    border-radius: 9999px;
+}
+
+.MenuCentral a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: #FCFDFF;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+.MenuCentral a.activo {
+    background: #9198F5;
+}
+
+.MenuCentral .Herramientas {
+
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: #6B7280;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+
+.Acciones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.btnSecundario {
+    background: transparent;
+    border: none;
+    color: #5B5B5B;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnPrimario {
+    background: linear-gradient(to right, #6DB7F8, #9A7BFF);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnPrimario {
+    border: 0;
+    background: #9198F5;
+    color: #FFFFFF;
+}
+
+.btnSecundario {
+
+    color: #16213E;
+    font-family: "Nunito", sans-serif;
 }
