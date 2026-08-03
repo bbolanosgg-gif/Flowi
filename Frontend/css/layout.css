@@ -1,0 +1,38 @@
+/*COMO SE ORGANIZAN LAS COSAS, donde esta ubicado cada cosa*/
+.BarraDeNavegacion{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+    gap:24px;
+    padding:15px 40px;
+    background:var(--color-fondo);
+    overflow-x:auto;
+}
+
+/*Logo de Flowi*/
+.LogoFlowi{
+    flex:0 0 auto;
+}
+
+.LogoFlowi img{
+    width:200px;
+    height:auto;
+}
+
+/*Menu Central de Flowi*/
+.MenuCentral{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:10px 14px;
+    background:var(--color-superficie);
+    border-radius:9999px;
+}
+
+.btnEntrar{
+    gap:14px;
+    padding:10px 14px;
+    font-family:var(--fuente-principal);
+}
+

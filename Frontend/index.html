@@ -7,35 +7,64 @@
     <title>Flowi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    
+
     <header class="BarraDeNavegacion"> <!-- Header: la parte superior de la pagina-->
         <div class="LogoFlowi">
             <img src="img/LogoFlowi.png" alt="Logo Flowi">
         </div>
         <!--Menu Central-->
         <nav class="MenuCentral">
-            <a href="ElMetodo.html" class="activo">Quienes somos</a>
-            <a href="Herramientas.html"class="Herramientas">Herramientas</a>
+            <a href="ElMetodo.html" class="enlaceFlowi botonFlowi botonPequeno">Quienes somos</a>
+            <a href="Herramientas.html" class="enlaceFlowi Herramientas">Herramientas</a>
         </nav>
         <!--Botones de inicio-->
         <div class="Acciones">
-            <button class=" btnSecundario">Entrar</button>
-            <button class=" btnPrimario">Registrarse</button>
+            <button class=" btnEntrar">Entrar</button>
+            <button class=" botonFlowi botonGrande">Registrarse</button>
         </div>
     </header>
 
     <main> <!--Main: La parte donde se encuentra el contenido principal de la pagina-->
-        <section id="hero"> <!--Seccion 1 (Hero): Bienvenida de la pagina-->
-            <h2>Supera el bloqueo sin culpa</h2>
-            <p>No necesitas más motivación. Necesitas un primer paso claro. Flowi te acompaña para encontrarlo y seguir
-                avanzando.</p>
+        <section class="Hero">
+
+            <div class="HeroEtiqueta">
+                ✧ REGULACIÓN EMOCIONAL, NO GESTIÓN DE TAREAS
+            </div>
+
+            <h1 class="HeroTitulo">
+                Supera la parálisis,
+                <span>sin culpa</span>
+            </h1>
+
+            <p class="HeroDescripcion">
+                Flowi te acompaña cuando la mente se detiene.
+            </p>
+
+            <p class="HeroDescripcion">
+                Sin juicios, sin cronómetros, sin presión.
+            </p>
+
+            <div class="HeroBotones">
+
+                <button class="botonFlowi botonHero">
+                    Comenzar ahora →
+                </button>
+
+                <button class="botonSecundario">
+                    Ver demo
+                </button>
+
+            </div>
 
         </section>
+
+
 
         <!--Seccion 2 (Productos): Una seccion donde voy amostrar cuales son mis productos-->
         <section id="Herramientas">

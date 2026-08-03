@@ -1,0 +1,16 @@
+:root{
+    /*Colores de la pagina web*/
+
+    --color-primario:#9198F5;
+    --color-secundario:#6DB7F8;
+    --color-acento:#9A7BFF;
+    --color-fondo:#F3F6FE;
+    --color-superficie:#FCFCFD;
+    --color-texto:#16213E;
+    --color-gris:#6B7280;
+    --color-blanco:#FFFFFF;
+
+    /*Fuentes de mi pagina web*/
+    --fuente-principal:"Nunito",sans-serif;
+
+}

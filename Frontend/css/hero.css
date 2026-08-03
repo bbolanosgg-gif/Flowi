@@ -1,0 +1,119 @@
+/*Contenido de la pagina web hero*/
+
+.Hero {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondo difuminado */
+.Hero::before {
+
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at left,
+      rgba(109, 183, 248, .18),
+      transparent 55%),
+
+    radial-gradient(circle at right,
+      rgba(154, 123, 255, .18),
+      transparent 55%);
+
+  filter: blur(35px);
+  z-index: -1;
+
+}
+
+
+.HeroEtiqueta {
+
+  padding: 14px 34px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .7);
+  border: 1px solid rgba(154, 123, 255, .18);
+  color: var(--color-acento);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+
+}
+
+
+.HeroTitulo {
+
+  font-size: 82px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--color-texto);
+  max-width: 1200px;
+
+}
+
+
+/* Palabra coloreada */
+.HeroTitulo span {
+
+  background: linear-gradient(90deg,
+      var(--color-secundario),
+      var(--color-acento));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+/* Hero descripcion */
+.HeroDescripcion {
+
+  font-size: 24px;
+  color: var(--color-gris);
+  margin-top: 18px;
+
+}
+
+.HeroBotones {
+
+  display: flex;
+  gap: 28px;
+  margin-top: 55px;
+
+}
+
+.botonHero {
+
+  font-size: 32px;
+  padding: 24px 70px;
+
+}
+
+.botonSecundario {
+
+  background: white;
+  border: 2px solid #E8E5FF;
+  border-radius: 999px;
+  padding: 24px 60px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-texto);
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+.botonSecundario:hover {
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+}

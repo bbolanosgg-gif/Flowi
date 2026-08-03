@@ -1,0 +1,109 @@
+/*APARIENCIA DE FLOWI*/
+
+
+/*Diseño de los enlaces <a> del Menu Central (Quienes somos y herramientas) en su forma reutilizable*/
+.enlaceFlowi{
+    display:inline-block;
+    text-decoration:none;
+    font-family:var(--fuente-principal);
+    font-size:17px;
+    font-weight:600;
+}
+
+/*Diseños de botones de flowi traslucidos*/
+.botonFlowi{
+    background:linear-gradient(
+        135deg,
+        var(--color-secundario),
+        var(--color-primario),
+        var(--color-acento)
+    );
+
+    color:var(--color-blanco);
+    border:none;
+    border-radius:9999px;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.30s;
+    box-shadow:
+        0 8px 20px rgba(109,183,248,.25),
+        0 6px 18px rgba(154,123,255,.20);
+}
+
+/*Tamaños de los botones*/
+.botonPequeno{
+    padding:12px 22px;
+}
+
+.botonGrande{
+    padding:12px 22px;
+    font-family:var(--fuente-principal);
+    font-size:17px;
+}
+
+
+
+/*Diseño del efecto de brillo de transición para los botones de flowi traslucidos*/
+.botonFlowi::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:45%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+    transition:.60s;
+}
+
+
+/*Diseño del efecto de brillo de transición para los botones de flowi traslucidos al pasar el ratón encima*/
+.botonFlowi:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 12px 28px rgba(109,183,248,.35),
+        0 12px 30px rgba(154,123,255,.30);
+}
+
+.botonFlowi:hover::before{
+    left:130%;
+}
+
+.botonFlowi:active{
+    transform:scale(.97);
+}
+
+
+.Herramientas{
+    color:var(--color-gris);
+}
+
+.Herramientas:hover{
+
+    color:var(--color-texto);
+
+}
+
+
+.btnEntrar{
+
+    background:none;
+
+    border:none;
+
+    color:var(--color-texto);
+
+    font-family:var(--fuente-principal);
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
