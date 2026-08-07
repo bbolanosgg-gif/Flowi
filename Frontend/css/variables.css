@@ -1,16 +1,37 @@
-:root{
-    /*Colores de la pagina web*/
+:root {
 
-    --color-primario:#9198F5;
-    --color-secundario:#6DB7F8;
-    --color-acento:#9A7BFF;
-    --color-fondo:#F3F6FE;
-    --color-superficie:#FCFCFD;
-    --color-texto:#16213E;
-    --color-gris:#6B7280;
-    --color-blanco:#FFFFFF;
+    /* Colores */
+    --color-primario: #9198F5;
+    --color-secundario: #6DB7F8;
+    --color-acento: #9A7BFF;
 
-    /*Fuentes de mi pagina web*/
-    --fuente-principal:"Nunito",sans-serif;
+    --color-fondo: #EEF4FF;
+    --color-superficie: #FFFFFF;
+
+    --color-texto: #16213E;
+    --color-gris: #6B7280;
+    --color-blanco: #FFFFFF;
+
+
+    /*  TIPOGRAFÍA */
+    --fuente-principal: "Nunito", sans-serif;
+
+
+    /* BORDES*/
+    --radio-grande: 28px;
+    --radio-mediano: 20px;
+    --radio-pill: 9999px;
+
+
+    /* SOMBRAS */
+    --sombra-suave:
+        0 10px 30px rgba(80, 100, 180, 0.12);
+
+    --sombra-boton:
+        0 10px 25px rgba(109, 183, 248, 0.25);
+
+
+    /* TRANSPARENCIAS */
+    --glass: rgba(255, 255, 255, 0.68);
 
 }

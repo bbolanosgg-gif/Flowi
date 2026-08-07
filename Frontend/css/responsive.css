@@ -1,0 +1,173 @@
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .BarraDeNavegacion {
+
+        width: calc(100% - 30px);
+
+    }
+
+    .MenuCentral {
+
+        display: none;
+
+    }
+
+    .Hero {
+
+        width: calc(100% - 30px);
+
+        padding: 60px 25px 40px;
+
+    }
+
+    .HeroVisual {
+
+        height: 320px;
+
+    }
+
+    .TarjetaHerramienta {
+
+        width: 100px;
+        height: 100px;
+
+        font-size: 42px;
+
+    }
+
+    .FooterPrincipal {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .BarraDeNavegacion {
+
+        width: calc(100% - 20px);
+
+        margin: 10px auto;
+
+        padding: 10px;
+
+    }
+
+    .LogoFlowi img {
+
+        width: 120px;
+
+    }
+
+    .btnEntrar {
+
+        display: none;
+
+    }
+
+    .botonGrande {
+
+        padding: 10px 17px;
+
+        font-size: 14px;
+
+    }
+
+
+    /* Hero */
+
+    .Hero {
+
+        width: calc(100% - 20px);
+
+        min-height: 650px;
+
+        padding: 50px 20px 30px;
+
+    }
+
+    .HeroTitulo {
+
+        font-size: 42px;
+
+    }
+
+    .HeroDescripcion {
+
+        font-size: 17px;
+
+    }
+
+    .HeroVisual {
+
+        height: 270px;
+
+    }
+
+    .IlustracionEstudiante {
+
+        width: 280px;
+
+        height: 220px;
+
+    }
+
+    .TarjetaHerramienta {
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 30px;
+
+    }
+
+    .TarjetaHerramienta:nth-child(1) {
+
+        left: 0;
+
+    }
+
+    .TarjetaHerramienta:nth-child(2) {
+
+        right: 0;
+
+    }
+
+    .TarjetaHerramienta:nth-child(3) {
+
+        right: 10%;
+
+    }
+
+    .botonHero {
+
+        margin-top: 0;
+
+        padding: 13px 28px;
+
+    }
+
+
+    /* Footer */
+
+    .FooterPrincipal {
+
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+
+    }
+
+}

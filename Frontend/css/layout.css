@@ -1,38 +1,78 @@
-/*COMO SE ORGANIZAN LAS COSAS, donde esta ubicado cada cosa*/
-.BarraDeNavegacion{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:nowrap;
-    gap:24px;
-    padding:15px 40px;
-    background:var(--color-fondo);
-    overflow-x:auto;
+/* HEADER */
+
+.BarraDeNavegacion {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1400px, calc(100% - 48px));
+    margin: 24px auto;
+    padding: 12px 18px;
+
 }
 
-/*Logo de Flowi*/
-.LogoFlowi{
-    flex:0 0 auto;
+
+/* LOGO */
+
+.LogoFlowi {
+    flex: 0 0 auto;
 }
 
-.LogoFlowi img{
-    width:200px;
-    height:auto;
+.LogoFlowi img {
+    width: 145px;
+    height: auto;
 }
 
-/*Menu Central de Flowi*/
-.MenuCentral{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    padding:10px 14px;
-    background:var(--color-superficie);
-    border-radius:9999px;
+
+/* MENU */
+
+.MenuCentral {
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 auto;
+
 }
 
-.btnEntrar{
-    gap:14px;
-    padding:10px 14px;
-    font-family:var(--fuente-principal);
+
+/*  ACCIONES */
+
+.Acciones {
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 0 0 auto;
+
 }
 
+
+/*  HERO CONTENEDOR */
+
+.Hero {
+
+    width: min(1400px, calc(100% - 48px));
+    margin: 0 auto;
+
+}
+
+
+/* FUNCIONES */
+
+.Funciones {
+
+    width: min(1200px, calc(100% - 48px));
+    margin: 80px auto;
+
+}
+
+
+/* FOOTER */
+
+.FooterPrincipal {
+
+    width: min(1200px, calc(100% - 48px));
+    margin: 80px auto 30px;
+
+}

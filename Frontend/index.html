@@ -2,105 +2,204 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowi</title>
+    <title>Flowi | Tu acompañante de estudio</title>
+    <!-- Links para el uso de la Fuente Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 
 <body>
 
-    <header class="BarraDeNavegacion"> <!-- Header: la parte superior de la pagina-->
+    <!-- Header -->
+    <header class="BarraDeNavegacion glass">
+        <!-- Logo -->
         <div class="LogoFlowi">
-            <img src="img/LogoFlowi.png" alt="Logo Flowi">
+            <img
+                src="img/LogoFlowi.png"
+                alt="Logo Flowi"
+            >
+
         </div>
-        <!--Menu Central-->
+
+        <!-- Menú -->
         <nav class="MenuCentral">
-            <a href="ElMetodo.html" class="enlaceFlowi botonFlowi botonPequeno">Quienes somos</a>
-            <a href="Herramientas.html" class="enlaceFlowi Herramientas">Herramientas</a>
+            <a
+                href="#"
+                class="enlaceFlowi enlaceActivo"
+            >
+                Check-in
+            </a>
+
+            <a
+                href="#"
+                class="enlaceFlowi"
+            >
+                Reset
+            </a>
+
+            <a
+                href="#"
+                class="enlaceFlowi"
+            >
+                Think
+            </a>
+
+            <a
+                href="#"
+                class="enlaceFlowi"
+            >
+                Unstuck
+            </a>
+
+            <a
+                href="#"
+                class="enlaceFlowi"
+            >
+                Journey
+            </a>
         </nav>
-        <!--Botones de inicio-->
+
+
+        <!-- Botón -->
         <div class="Acciones">
-            <button class=" btnEntrar">Entrar</button>
-            <button class=" botonFlowi botonGrande">Registrarse</button>
+            <button class="botonFlowi botonPequeno">
+                Prueba Gratis
+            </button>
         </div>
+
     </header>
 
-    <main> <!--Main: La parte donde se encuentra el contenido principal de la pagina-->
+
+
+    <main>
+        <!-- HERO -->
+
         <section class="Hero">
+            <div class="HeroContenido">
+                <h1 class="HeroTitulo">
+                    Flowi: Tu acompañante
+                    <br>
+                    de estudio sin juicios.
+                </h1>
 
-            <div class="HeroEtiqueta">
-                ✧ REGULACIÓN EMOCIONAL, NO GESTIÓN DE TAREAS
+
+                <p class="HeroDescripcion">
+                    Supera el bloqueo y la saturación
+                    con herramientas diseñadas para
+                    el bienestar del estudiante.
+                </p>
             </div>
 
-            <h1 class="HeroTitulo">
-                Supera la parálisis,
-                <span>sin culpa</span>
-            </h1>
 
-            <p class="HeroDescripcion">
-                Flowi te acompaña cuando la mente se detiene.
-            </p>
 
-            <p class="HeroDescripcion">
-                Sin juicios, sin cronómetros, sin presión.
-            </p>
+            <!-- Elementos visuales -->
+            <div class="HeroVisual">
 
-            <div class="HeroBotones">
+                <!-- Tarjeta 1 -->
+                <div class="TarjetaHerramienta">
+                    🧭
+                </div>
 
-                <button class="botonFlowi botonHero">
-                    Comenzar ahora →
-                </button>
 
-                <button class="botonSecundario">
-                    Ver demo
-                </button>
+                <!-- Tarjeta 2 -->
+                <div class="TarjetaHerramienta">
+                    🧠
+                </div>
 
+
+                <!-- Tarjeta 3 -->
+                <div class="TarjetaHerramienta">
+                    🛟
+                </div>
+
+
+                <!-- Imagen principal -->
+                <div class="IlustracionEstudiante">
+                    <img
+                        src="img/hero-estudiante.png"
+                        alt="Estudiante utilizando Flowi"
+                    >
+                </div>
             </div>
 
+
+
+            <!-- CTA -->
+            <button class="botonFlowi botonHero">
+                Empezar Ahora
+            </button>
         </section>
 
 
 
-        <!--Seccion 2 (Productos): Una seccion donde voy amostrar cuales son mis productos-->
-        <section id="Herramientas">
-            <h2>Funciones</h2>
-            <ul>
-                <li>Check-in</li>
-                <li>Next Step</li>
-                <li>Think</li>
-                <li>Hint</li>
-                <li>Reset</li>
-                <li>Streak</li>
-                <li>Journey</li>
-            </ul>
+        <!-- FUNCIONES -->
+
+        <section
+            class="Funciones"
+            id="Funciones"
+        >
+            <h2>
+                Herramientas para avanzar
+            </h2>
+            <p>
+                Flowi te acompaña en diferentes momentos
+                de tu proceso de estudio.
+            </p>
         </section>
     </main>
 
+
+    <!-- FOOTER -->
+
     <footer class="FooterPrincipal">
         <div class="FooterLogo">
-            <img src="img/LogoFlowi.png" alt="Logo Flowi">
+            <img
+                src="img/LogoFlowi.png"
+                alt="Logo Flowi"
+            >
         </div>
+
 
         <div class="FooterContacto">
             <h3>Contacto</h3>
-            <p>📧 contacto@flowi.com</p>
-            <p>📍 Medellín, Colombia</p>
+            <p>
+                📧 contacto@flowi.com
+            </p>
+            <p>
+                📍 Medellín, Colombia
+            </p>
         </div>
+
 
         <div class="FooterEnlaces">
-            <h3>Síguenos</h3>
-            <a href="#">Instagram</a><br>
-            <a href="#">LinkedIn</a><br>
-            <a href="#">GitHub</a>
-        </div>
 
+            <h3>Síguenos</h3>
+            <a href="#">
+                Instagram
+            </a>
+            <br>
+            <a href="#">
+                LinkedIn
+            </a>
+            <br>
+            <a href="#">
+                GitHub
+            </a>
+        </div>
     </footer>
 
 </body>
-
 </html>
