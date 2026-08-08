@@ -9,92 +9,57 @@
     <!-- Links para el uso de la Fuente Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS principal -->
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-
-
 <body>
 
     <!-- Header -->
     <header class="BarraDeNavegacion glass">
         <!-- Logo -->
         <div class="LogoFlowi">
-            <img
-                src="img/LogoFlowi.png"
-                alt="Logo Flowi"
-            >
-
+            <img src="img/LogoFlowi.png" alt="Logo Flowi">
         </div>
 
         <!-- Menú -->
         <nav class="MenuCentral">
-            <a
-                href="#"
-                class="enlaceFlowi enlaceActivo"
-            >
-                Check-in
-            </a>
-
-            <a
-                href="#"
-                class="enlaceFlowi"
-            >
-                Reset
-            </a>
-
-            <a
-                href="#"
-                class="enlaceFlowi"
-            >
-                Think
-            </a>
-
-            <a
-                href="#"
-                class="enlaceFlowi"
-            >
-                Unstuck
-            </a>
-
-            <a
-                href="#"
-                class="enlaceFlowi"
-            >
-                Journey
-            </a>
+            <a href="#" class="enlaceFlowi enlaceActivo">Check-in</a>
+            <a href="#" class="enlaceFlowi">Reset</a>
+            <a href="#" class="enlaceFlowi">Think</a>
+            <a href="#" class="enlaceFlowi">Unstuck</a>
+            <a href="#" class="enlaceFlowi">Journey</a>
         </nav>
-
 
         <!-- Botón -->
         <div class="Acciones">
-            <button class="botonFlowi botonPequeno">
-                Prueba Gratis
-            </button>
+            <button class="botonFlowi boton1">Prueba Gratis</button>
+            <button class="botonFlowi boton2">Entrar</button>
         </div>
-
     </header>
 
 
-
+    <!-- HERO -->
     <main>
-        <!-- HERO -->
-
         <section class="Hero">
+            <img src="img/romboMorado.png" class="HeroDecoracion decor-arriba-izq" alt="" aria-hidden="true">
+            <img src="img/nubeizq.png" class="HeroDecoracion decor-abajo-izq" alt="" aria-hidden="true">
+            <img src="img/cuboazul.png" class="HeroDecoracion decor-arriba-der" alt="" aria-hidden="true">
+            <img src="img/nubeder.png" class="HeroDecoracion decor-abajo-der" alt="" aria-hidden="true">
+
             <div class="HeroContenido">
                 <h1 class="HeroTitulo">
-                    Flowi: Tu acompañante
+                    <span class="linea-1">Hoy, aunque sea <span class="texto-destacado">un</span></span>
                     <br>
-                    de estudio sin juicios.
+                    <span class="texto-destacado">poco.</span>
                 </h1>
-
 
                 <p class="HeroDescripcion">
                     Supera el bloqueo y la saturación
@@ -103,39 +68,11 @@
                 </p>
             </div>
 
-
-
-            <!-- Elementos visuales -->
-            <div class="HeroVisual">
-
-                <!-- Tarjeta 1 -->
-                <div class="TarjetaHerramienta">
-                    🧭
-                </div>
-
-
-                <!-- Tarjeta 2 -->
-                <div class="TarjetaHerramienta">
-                    🧠
-                </div>
-
-
-                <!-- Tarjeta 3 -->
-                <div class="TarjetaHerramienta">
-                    🛟
-                </div>
-
-
-                <!-- Imagen principal -->
-                <div class="IlustracionEstudiante">
-                    <img
-                        src="img/hero-estudiante.png"
-                        alt="Estudiante utilizando Flowi"
-                    >
-                </div>
+            <!-- Imagen principal -->
+            <div class="IlustracionEstudiante">
+                <img src="img/animacionflowii.png" alt="Estudiante utilizando Flowi">
             </div>
-
-
+            </div>
 
             <!-- CTA -->
             <button class="botonFlowi botonHero">
@@ -144,60 +81,64 @@
         </section>
 
 
-
         <!-- FUNCIONES -->
+        <section class="Funciones" id="Funciones">
+            <div class="EncabezadoFunciones">
+                <h2>Herramientas para avanzar</h2>
+                <p>Flowi te acompaña en diferentes momentos de tu proceso de estudio.</p>
+            </div>
 
-        <section
-            class="Funciones"
-            id="Funciones"
-        >
-            <h2>
-                Herramientas para avanzar
-            </h2>
-            <p>
-                Flowi te acompaña en diferentes momentos
-                de tu proceso de estudio.
-            </p>
+            <!-- CONTENEDOR DEL CARRUSEL -->
+            <div class="carrusel-funciones">
+
+                <!-- TARJETA 1: Reset -->
+                <article class="tarjeta-funcion">
+                    <div class="contenido-texto">
+                        <h3>Reset <img src="img/icono-hoja.png" alt="hoja" class="icono-titulo"></h3>
+                        <span class="etiqueta-funcion">Piensa. Respira. Avanza.</span>
+                        <p>Un espacio breve de respiración guiada y cambio de perspectiva. Para antes de empezar o cuando hay saturación. El único espacio verde de Flowi – con propósito.</p>
+                    </div>
+                    <div class="contenido-imagen">
+                        <img src="img/arbol-burbuja.png" alt="Árbol morado en burbuja de cristal">
+                    </div>
+                </article>
+
+                <!-- TARJETA 2: Think (Ejemplo de segunda tarjeta) -->
+                <article class="tarjeta-funcion">
+                    <div class="contenido-texto">
+                        <h3>Think <img src="img/icono-cerebro.png" alt="cerebro" class="icono-titulo"></h3>
+                        <span class="etiqueta-funcion">Enfoca tu mente.</span>
+                        <p>Herramientas de concentración profunda para esos momentos donde necesitas máxima productividad y cero distracciones.</p>
+                    </div>
+                    <div class="contenido-imagen">
+                        <img src="img/cerebro-burbuja.png" alt="Cerebro en burbuja">
+                    </div>
+                </article>
+
+            </div>
         </section>
     </main>
 
 
     <!-- FOOTER -->
-
     <footer class="FooterPrincipal">
         <div class="FooterLogo">
-            <img
-                src="img/LogoFlowi.png"
-                alt="Logo Flowi"
-            >
+            <img src="img/LogoFlowi.png" alt="Logo Flowi">
         </div>
-
 
         <div class="FooterContacto">
             <h3>Contacto</h3>
-            <p>
-                📧 contacto@flowi.com
-            </p>
-            <p>
-                📍 Medellín, Colombia
-            </p>
+            <p>📧 contacto@flowi.com</p>
+            <p> Medellín, Colombia</p>
         </div>
 
-
         <div class="FooterEnlaces">
-
             <h3>Síguenos</h3>
-            <a href="#">
-                Instagram
-            </a>
+            <a href="#">Instagram</a>
             <br>
-            <a href="#">
-                LinkedIn
-            </a>
+            <a href="#">LinkedIn</a>
             <br>
-            <a href="#">
-                GitHub
-            </a>
+            <a href="#">GitHub</a>
         </div>
     </footer>
 

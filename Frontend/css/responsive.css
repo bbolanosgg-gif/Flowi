@@ -171,3 +171,40 @@
     }
 
 }
+
+/* Añadir dentro de tu @media (max-width: 900px) */
+    .tarjeta-funcion {
+        flex-direction: column-reverse; /* Pone el texto abajo y la imagen arriba */
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .contenido-texto {
+        max-width: 100%;
+    }
+
+    .contenido-texto h3 {
+        justify-content: center; /* Centra el título con su icono */
+    }
+
+
+/* Añadir dentro de tu @media (max-width: 600px) */
+    .EncabezadoFunciones h2 {
+        font-size: 32px;
+    }
+    
+    .tarjeta-funcion {
+        padding: 30px 20px;
+    }
+
+    .contenido-texto h3 {
+        font-size: 40px;
+    }
+
+    .contenido-texto p {
+        font-size: 16px;
+    }
+    
+    .carrusel-funciones {
+        gap: 15px;
+    }

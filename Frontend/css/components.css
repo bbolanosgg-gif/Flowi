@@ -52,17 +52,11 @@
 
 .botonFlowi {
 
-    border: none;
+    
     border-radius: var(--radio-pill);
 
-    background: linear-gradient(
-        135deg,
-        var(--color-secundario),
-        var(--color-primario),
-        var(--color-acento)
-    );
-
-    color: var(--color-blanco);
+    
+    
     font-family: var(--fuente-principal);
     font-weight: 700;
     cursor: pointer;
@@ -91,18 +85,42 @@
 
 /* TAMAÑOS DE BOTONES */
 
-.botonPequeno {
+.boton1 {
 
     padding: 10px 18px;
+    border: none;
+    background: linear-gradient(
+        135deg,
+        var(--color-secundario),
+        var(--color-primario),
+        var(--color-acento)
+    );
+    color: var(--color-blanco);
+
 
 }
 
-.botonGrande {
-
-    padding: 13px 25px;
-
+.boton2 {
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
+    color: #1e293b;                       /* Color de texto oscuro */
+    border-radius: 50px;                  /* Borde completamente redondeado */
+    
+    /* Borde fino y suave */
+    border: 1px solid rgba(190, 205, 255, 0.7); 
+    
+    /* Resplandor y suavizado alrededor del borde */
+    box-shadow: 0 0 10px rgba(190, 205, 255, 0.4),
+                inset 0 0 6px rgba(255, 255, 255, 0.6);
+    
+    /* Efecto de desenfoque de fondo */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    cursor: pointer;
+    font-family: var(--fuente-principal);
+    font-weight: 600;
 }
-
 
 /*  BOTÓN ENTRAR */
 
@@ -135,4 +153,122 @@
     -webkit-backdrop-filter: blur(18px);
     box-shadow: var(--sombra-suave);
 
+}
+
+.boton2 {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    
+    
+}
+
+/* =========================================
+   CARRUSEL DE FUNCIONES
+========================================= */
+
+.EncabezadoFunciones {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.EncabezadoFunciones h2 {
+    font-family: var(--fuente-secundaria);
+    font-size: 42px;
+    color: var(--color-texto);
+    margin-bottom: 12px;
+}
+
+.EncabezadoFunciones p {
+    color: var(--color-gris);
+    font-size: 18px;
+}
+
+.carrusel-funciones {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px; /* Espacio entre tarjetas */
+    width: 100%;
+    padding: 20px 10px 40px; /* Padding inferior para que no se corte la sombra */
+    
+    /* Ocultar barra de scroll */
+    scrollbar-width: none;
+}
+
+.carrusel-funciones::-webkit-scrollbar {
+    display: none;
+}
+
+/* LA TARJETA CON EFECTO GLASS DE FLOWI */
+.tarjeta-funcion {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+    /* Reutilizamos tu efecto glass y bordes */
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: var(--sombra-suave);
+    border-radius: var(--radio-grande);
+    
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* LADO IZQUIERDO: TEXTOS */
+.contenido-texto {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contenido-texto h3 {
+    font-family: var(--fuente-secundaria);
+    font-size: 55px;
+    color: var(--color-texto);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono-titulo {
+    width: 45px;
+    height: auto;
+}
+
+.etiqueta-funcion {
+    display: inline-block;
+    background: rgba(154, 123, 255, 0.15); /* Morado muy suave */
+    color: var(--color-acento);
+    padding: 8px 18px;
+    border-radius: var(--radio-pill);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.contenido-texto p {
+    color: var(--color-gris);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* LADO DERECHO: IMAGEN */
+.contenido-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-imagen img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(80, 100, 180, 0.15));
 }

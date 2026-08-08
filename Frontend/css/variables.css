@@ -11,10 +11,12 @@
     --color-texto: #16213E;
     --color-gris: #6B7280;
     --color-blanco: #FFFFFF;
+    --color-blancoA: #FAFCFF;
 
 
     /*  TIPOGRAFÍA */
     --fuente-principal: "Nunito", sans-serif;
+    --fuente-secundaria: "Playfair Display", serif;
 
 
     /* BORDES*/
