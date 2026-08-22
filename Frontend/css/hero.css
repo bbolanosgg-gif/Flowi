@@ -1,267 +1,102 @@
-/* HERO */
+/* ==============================================
+   HERO (Sección Principal Soft Stop)
+============================================== */
 
-.Hero {
-
+.HeroPrincipal {
     position: relative;
-    min-height: 100vh;
-    padding: 70px 40px 50px;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que el texto gigante cree barras de desplazamiento */
+    
+}
+
+/* --- TEXTOS FANTASMA (CALM / STOP) --- */
+
+.FondoTexto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%; /* Separa las palabras hacia los bordes */
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; /* Se queda en el fondo */
+    pointer-events: none; /* Evita que el usuario seleccione este texto por error */
+}
+
+.TextoCalm, .TextoStop {
+    font-family: var(--fuente-principal);
+    font-size: clamp(80px, 15vw, 180px); /* Tamaño fluido que se adapta a la pantalla */
+    font-weight: 700;
+    color: rgba(224, 224, 224, 0.4); /* Un gris muy transparente */
+    letter-spacing: 15px;
+}
+
+/* --- CONTENIDO CENTRAL (Título y Medusa) --- */
+
+.ContenidoCentral {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    overflow: hidden;
-    
-    background:
-
-        radial-gradient(
-            circle at 15% 45%,
-            rgba(154, 123, 255, 0.22),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 85% 45%,
-            rgba(109, 183, 248, 0.22),
-            transparent 30%
-        ),
-
-        linear-gradient(
-            135deg,
-            #F4EEFF,
-            #EAF7FF
-        );
-
+    margin-top: 30px; 
 }
 
-
-/* DECORACIONES DE FONDO */
-
-.Hero::before {
-
-    content: "";
-    position: absolute;
-
-    width: 350px;
-    height: 350px;
-
-    left: -180px;
-    top: 220px;
-
-    border-radius: 50%;
-    background: rgba(154, 123, 255, 0.15);
-    filter: blur(30px);
-
-}
-
-.Hero::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 350px;
-    height: 350px;
-
-    right: -180px;
-    top: 250px;
-
-    border-radius: 50%;
-    background: rgba(109, 183, 248, 0.18);
-    filter: blur(30px);
-
-}
-
-
-/* CONTENIDO */
-
-.HeroContenido {
-
-    position: relative;
-    z-index: 2;
-    max-width: 760px;
-
-}
-
-
-/* TÍTULO */
-
-.HeroTitulo {
-
-    margin-top: 20px;
-    font-size: clamp(60px, 8vw, 90px);
-    line-height: 1.05;
+.TituloPrincipal {
+    font-family: var(--fuente-principal);
+    font-size: clamp(40px, 6vw, 75px);
     font-weight: 600;
-    letter-spacing: -1.5px;
+    letter-spacing: 25px; /* Espaciado amplio y elegante */
     color: var(--color-texto);
-    font-family: var(--fuente-secundaria);
-
-}
-
-
-.HeroTitulo .linea-1 {
-  white-space: nowrap; /* Impide rotundamente que esta frase se divida */
-}
-
-.HeroTitulo .texto-destacado {
-  background: linear-gradient(135deg, var(--color-primario), var(--color-acento), var(--color-secundario));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline;
-}
-/* TEXTO DEL HERO */
-
-.HeroDescripcion {
-
-    max-width: 650px;
-    margin: 24px auto 0;
-    font-size: 20px;
-    line-height: 1.5;
-    color: var(--color-gris);
-
-}
-
-
-/* VISUAL DEL HERO */
-
-.HeroVisual {
-
-    position: relative;
-    z-index: 2;
-    width: min(760px, 100%);
-    height: 360px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-/* IMAGEN DEL ESTUDIANTE */
-
-.IlustracionEstudiante {
-
-    width: 430px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/* 1. Centramos el contenido dentro del contenedor */
-.IlustracionEstudiante {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 2. Aumentamos el tamaño de la imagen */
-.IlustracionEstudiante img {
-    width: 170%;
-    height: 170%;
-    object-fit: contain;
-    
-    /* Escala la imagen un 20% más grande (ajusta el 1.2 a tu gusto: 1.3, 1.5, etc.) */
-    transform: scale(1.2); 
-    
-    filter: drop-shadow(
-        0 18px 25px rgba(80, 90, 160, 0.15)
-    );
-}
-
-/* TARJETAS FLOTANTES */
-
-.TarjetaHerramienta {
-
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 22px;
-    background: rgba(255, 255, 255, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    box-shadow:
-        0 15px 35px rgba(70, 80, 150, 0.12);
-    font-size: 55px;
-
-}
-
-
-/* Posición de las tarjetas */
-.TarjetaHerramienta:nth-child(1) {
-
-    left: 1%;
-    top: 90px;
-    transform: rotate(-8deg);
-
-}
-
-.TarjetaHerramienta:nth-child(2) {
-
-    right: 1%;
-    top: 80px;
-    transform: rotate(8deg);
-
-}
-
-.TarjetaHerramienta:nth-child(3) {
-
-    right: 70%;
-    bottom: 5px;
-    transform: rotate(-5deg);
-
-}
-
-
-
-
-/* BOTÓN DEL HERO */
-
-.botonHero {
-
-    position: relative;
+    margin-left: 25px; /* Compensa el letter-spacing para que quede 100% centrado */
+    margin-bottom: -20px; /* Acerca el título un poco a la medusa */
     z-index: 3;
-    margin-top: 10px;
-    padding: 15px 38px;
-    font-size: 17px;
-
 }
 
-/* --- ILUSTRACIONES DE LOS BORDES --- */
+.ContenedorMedusa {
+    position: relative;
+    width: clamp(250px, 35vw, 450px); /* La medusa crece o se encoge según la pantalla */
+    z-index: 2;
+    
+    /* Animación de flotación suave */
+    animation: flotar 6s ease-in-out infinite;
+}
 
-/* Clase base para todas las ilustraciones */
-.HeroDecoracion {
-    position: absolute;
-    z-index: 1; /* Se asegura de quedar por detrás del texto y los botones */
-    pointer-events: none; /* Evita que estorben si el usuario intenta hacer clic */
-    width: 160px; /* Ajusta este tamaño según lo que necesites */
+.ImagenMedusa {
+    width: 100%;
+    height: auto;
     object-fit: contain;
+    /* Una sombra rosa/orquídea muy sutil para darle volumen */
+    filter: drop-shadow(0 20px 30px rgba(218, 112, 214, 0.25));
 }
 
-/* 2 a la izquierda */
-.decor-arriba-izq {
-    top: 5%; /* Separación desde arriba */
-    left: 0; /* Pegado al borde izquierdo */
+/* --- ANIMACIÓN --- */
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
-.decor-abajo-izq {
-    bottom: 5%; /* Separación desde abajo */
-    left: 0; 
+/* --- SUBTÍTULO INFERIOR --- */
+
+.ContenedorSubtitulo {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
 }
 
-/* 2 a la derecha */
-.decor-arriba-der {
-    top: 5%;
-    right: 0; /* Pegado al borde derecho */
-}
-
-.decor-abajo-der {
-    bottom: 5%;
-    right: 0;
+.SubtituloHero {
+    font-family: var(--fuente-secundaria); /* Usamos Nunito que es excelente para lectura larga */
+    font-size: 16px;
+    color: #666666; /* Un gris un poco más oscuro para que sea legible */
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
 }

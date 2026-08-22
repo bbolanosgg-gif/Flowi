@@ -1,101 +1,87 @@
-/* HEADER */
+/* ==============================================
+   HEADER (Navegación minimalista)
+============================================== */
 
-.BarraDeNavegacion {
+.EncabezadoSoft {
+    position: absolute; /* Para que flote sobre el fondo crema del Hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between; /* Empuja el menú a la izq y el logo a la der */
+    align-items: center;
+    
+    padding: 30px 5%; /* Espaciado adaptable a diferentes pantallas */
+    z-index: 100; /* Asegura que siempre esté por encima de todo */
+}
 
+/* --- LADO IZQUIERDO: Menú Hamburguesa --- */
+
+.MenuHamburguesa {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: min(1400px, calc(100% - 48px));
-    margin: 24px auto;
-    padding: 12px 18px;
-    gap: 20px;
-    border-radius: 38px;
-
+    gap: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--color-texto);
+    
+    transition: opacity 0.3s ease;
 }
 
-
-/* LOGO */
-
-.LogoFlowi {
-    flex: 0 0 auto;
+.MenuHamburguesa:hover {
+    opacity: 0.6; /* Un pequeño efecto visual al pasar el cursor */
 }
 
-.LogoFlowi img {
-    width: 145px;
+.icono-menu {
+    width: 24px;
     height: auto;
 }
 
+/* --- LADO DERECHO: Acciones y Logo --- */
 
-/* MENU */
-
-.MenuCentral {
-
+.AccionesUsuario {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin: 0 auto;
-
+    gap: 24px;
 }
 
+.enlaceEntrar {
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: var(--color-texto);
+    
+    transition: color 0.3s ease;
+}
 
-/*  ACCIONES */
+.enlaceEntrar:hover {
+    color: var(--color-acento); /* Cambia al rosa vibrante al pasar el cursor */
+}
 
-.Acciones {
-
+.LogoSoftStop {
     display: flex;
     align-items: center;
-    gap: 14px;
-    flex: 0 0 auto;
-
+    justify-content: center;
 }
 
-/* ACCIONES */
-
-
-
-/* Intercambiar el orden de los botones */
-.Acciones:has(.boton1) {
-    order: 2; /* "Prueba Gratis" pasa al final */
+.LogoSoftStop img {
+    width: 38px;  /* Ajusta el tamaño de ese pequeño icono circular */
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--sombra-suave);
+    transition: transform 0.3s ease;
 }
 
-.Acciones:has(.boton2) {
-    order: 1; /* "Entra" pasa al principio */
-}
-.Acciones {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    flex: 0 0 auto;
-    flex-direction: row-reverse; /* Invierte el orden de los botones internamente */
-}
-
-
-/*  HERO CONTENEDOR */
-
-.Hero {
-
-    width: min(1400px, calc(100% - 48px));
-    margin: 0 auto;
-    gap: 34px;
-
-}
-
-
-/* FUNCIONES */
-
-.Funciones {
-
-    width: min(1200px, calc(100% - 48px));
-    margin: 80px auto;
-
-}
-
-
-/* FOOTER */
-
-.FooterPrincipal {
-
-    width: min(1200px, calc(100% - 48px));
-    margin: 80px auto 30px;
-
+.LogoSoftStop img:hover {
+    transform: scale(1.05); /* Pequeño zoom al pasar el ratón */
 }

@@ -11,7 +11,13 @@ html {
 }
 
 body {
-    background: var(--color-fondo);
+    /* Aplicamos la imagen de fondo */
+    background-image: url('../img/fondo.png'); 
+    background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra el degradado */
+    background-attachment: fixed; /* Hace que el fondo se quede quieto al hacer scroll */
+    background-repeat: no-repeat;
+    
     color: var(--color-texto);
     font-family: var(--fuente-principal);
 }

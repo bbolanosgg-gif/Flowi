@@ -2,145 +2,169 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowi | Tu acompañante de estudio</title>
-    <!-- Links para el uso de la Fuente Nunito -->
+    <title>Soft Stop | Tu espacio de bienestar</title> 
+    
+    <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
     <!-- CSS principal -->
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header class="BarraDeNavegacion glass">
-        <!-- Logo -->
-        <div class="LogoFlowi">
-            <img src="img/LogoFlowi.png" alt="Logo Flowi">
-        </div>
+    <!-- HEADER-->
+    <header class="EncabezadoSoft">
+        <!-- Izquierda: Menú Hamburguesa -->
+        <button class="MenuHamburguesa">
+            <img src="img/menu.png" alt="Menú" class="icono-menu">
+            <span>MENU</span>
+        </button>
 
-        <!-- Menú -->
-        <nav class="MenuCentral">
-            <a href="#" class="enlaceFlowi enlaceActivo">Check-in</a>
-            <a href="#" class="enlaceFlowi">Reset</a>
-            <a href="#" class="enlaceFlowi">Think</a>
-            <a href="#" class="enlaceFlowi">Unstuck</a>
-            <a href="#" class="enlaceFlowi">Journey</a>
-        </nav>
-
-        <!-- Botón -->
-        <div class="Acciones">
-            <button class="botonFlowi boton1">Prueba Gratis</button>
-            <button class="botonFlowi boton2">Entrar</button>
+        <!-- Derecha: Entrar y Logo -->
+        <div class="AccionesUsuario">
+            <a href="#" class="enlaceEntrar">ENTRAR</a>
+            <div class="LogoSoftStop">
+                <img src="img/Logo.png" alt="Logo Soft Stop">
+            </div>
         </div>
     </header>
 
 
-    <!-- HERO -->
+    <!--HERO (Sección Principal)-->
     <main>
-        <section class="Hero">
-            <img src="img/romboMorado.png" class="HeroDecoracion decor-arriba-izq" alt="" aria-hidden="true">
-            <img src="img/nubeizq.png" class="HeroDecoracion decor-abajo-izq" alt="" aria-hidden="true">
-            <img src="img/cuboazul.png" class="HeroDecoracion decor-arriba-der" alt="" aria-hidden="true">
-            <img src="img/nubeder.png" class="HeroDecoracion decor-abajo-der" alt="" aria-hidden="true">
+        <section class="HeroPrincipal">
+            
+            <!-- Textos fantasma de fondo -->
+            <div class="FondoTexto" aria-hidden="true">
+                <span class="TextoCalm">CALM</span>
+                <span class="TextoStop">STOP</span>
+            </div>
 
-            <div class="HeroContenido">
-                <h1 class="HeroTitulo">
-                    <span class="linea-1">Hoy, aunque sea <span class="texto-destacado">un</span></span>
-                    <br>
-                    <span class="texto-destacado">poco.</span>
-                </h1>
+            <!-- Titlo Central SoftStop -->
+            <div class="ContenidoCentral">
+                <h1 class="TituloPrincipal">SOFTSTOP</h1>
+                
+                <!-- Imagen de la Medusa -->
+                <div class="ContenedorMedusa">
+                    <img src="img/medusa.png" alt="Ilustración de medusa translúcida" class="ImagenMedusa">
+                </div>
+            </div>
 
-                <p class="HeroDescripcion">
-                    Supera el bloqueo y la saturación
-                    con herramientas diseñadas para
-                    el bienestar del estudiante.
+            <!-- Subtítulo inferior -->
+            <div class="ContenedorSubtitulo">
+                <p class="SubtituloHero">
+                    Un espacio creado para tu bienestar, para un segundo y recuerda cuidar de ti.
                 </p>
             </div>
 
-            <!-- Imagen principal -->
-            <div class="IlustracionEstudiante">
-                <img src="img/animacionflowii.png" alt="Estudiante utilizando Flowi">
-            </div>
-            </div>
-
-            <!-- CTA -->
-            <button class="botonFlowi botonHero">
-                Empezar Ahora
-            </button>
         </section>
 
-
-        <!-- FUNCIONES -->
-        <section class="Funciones" id="Funciones">
+        <!-- SECCIÓN FUNCIONES y Carrusel -->
+        <section class="SeccionFunciones" id="funciones">
+            
             <div class="EncabezadoFunciones">
-                <h2>Herramientas para avanzar</h2>
-                <p>Flowi te acompaña en diferentes momentos de tu proceso de estudio.</p>
+                <h2>SOFTSTOP</h2>
+                <p>Funciones diseñadas para tu bienestar</p>
             </div>
 
-            <!-- CONTENEDOR DEL CARRUSEL -->
-            <div class="carrusel-funciones">
+            <!-- Pista del Carrusel -->
+            <div class="ContenedorCarrusel">
+                <button class="BtnCarrusel BtnPrev" aria-label="Anterior">❮</button>
 
-                <!-- TARJETA 1: Reset -->
-                <article class="tarjeta-funcion">
-                    <div class="contenido-texto">
-                        <h3>Reset <img src="img/icono-hoja.png" alt="hoja" class="icono-titulo"></h3>
-                        <span class="etiqueta-funcion">Piensa. Respira. Avanza.</span>
-                        <p>Un espacio breve de respiración guiada y cambio de perspectiva. Para antes de empezar o cuando hay saturación. El único espacio verde de Flowi – con propósito.</p>
-                    </div>
-                    <div class="contenido-imagen">
-                        <img src="img/arbol-burbuja.png" alt="Árbol morado en burbuja de cristal">
-                    </div>
-                </article>
+                <div class="PistaCarrusel">
+                    <!-- Imagenes carrusel. -->
+                    <div class="TarjetaCarrusel" data-index="0"><img src="img/placeholder1.jpg" alt="Reset"></div>
+                    <div class="TarjetaCarrusel" data-index="1"><img src="img/placeholder2.jpg" alt="Unstuck"></div>
+                    <div class="TarjetaCarrusel" data-index="2"><img src="img/placeholder3.jpg" alt="Think"></div>
+                    <div class="TarjetaCarrusel" data-index="3"><img src="img/placeholder4.jpg" alt="Journey"></div>
+                    <div class="TarjetaCarrusel" data-index="4"><img src="img/placeholder5.jpg" alt="Check-in"></div>
+                </div>
 
-                <!-- TARJETA 2: Think (Ejemplo de segunda tarjeta) -->
-                <article class="tarjeta-funcion">
-                    <div class="contenido-texto">
-                        <h3>Think <img src="img/icono-cerebro.png" alt="cerebro" class="icono-titulo"></h3>
-                        <span class="etiqueta-funcion">Enfoca tu mente.</span>
-                        <p>Herramientas de concentración profunda para esos momentos donde necesitas máxima productividad y cero distracciones.</p>
-                    </div>
-                    <div class="contenido-imagen">
-                        <img src="img/cerebro-burbuja.png" alt="Cerebro en burbuja">
-                    </div>
-                </article>
-
+                <button class="BtnCarrusel BtnNext" aria-label="Siguiente">❯</button>
             </div>
+
+            <!-- Puntos de navegación -->
+            <div class="IndicadoresCarrusel">
+                <span class="Punto" data-index="0"></span>
+                <span class="Punto" data-index="1"></span>
+                <span class="Punto" data-index="2"></span>
+                <span class="Punto" data-index="3"></span>
+                <span class="Punto" data-index="4"></span>
+            </div>
+
+            <!-- Textos Dinámicos que cambian con el JS -->
+            <div class="ContenedorTextosFuncion">
+                <h3 id="TituloFuncion">Cargando...</h3>
+                <h4 id="SubtituloFuncion"></h4>
+                <p id="DescripcionFuncion"></p>
+            </div>
+
         </section>
-    </main>
+        
+        <!-- FOOTER SOFTSTOP--> 
+    <footer class="FooterSoft">
+        <div class="FooterContenido">
+            
+            <!-- Columna 1: Marca y Misión -->
+            <div class="FooterColumna Marca">
+                <div class="LogoSoftStopFooter">
+                    <img src="img/Logo.png" alt="Logo Softstop" class="LogoImg">
+                    <span class="NombreMarca">SOFTSTOP</span>
+                </div>
+                <p class="Tagline">Tu pausa funcional para desatascar el estudio. Volviendo a avanzar, paso a paso.</p>
+                
+                <div class="RedesSociales">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
 
+            <!-- Columna 2: Producto -->
+            <div class="FooterColumna">
+                <h4>PRODUCTO</h4>
+                <a href="#">Check-in</a>
+                <a href="#">Think</a>
+                <a href="#">Unstuck</a>
+                <a href="#">Reset</a>
+            </div>
 
-    <!-- FOOTER -->
-    <footer class="FooterPrincipal">
-        <div class="FooterLogo">
-            <img src="img/LogoFlowi.png" alt="Logo Flowi">
+            <!-- Columna 3: Comunidad Beta -->
+            <div class="FooterColumna">
+                <h4>COMUNIDAD BETA</h4>
+                <a href="#">Guía de inicio rápido</a>
+                <a href="#" class="FeedbackLink">
+                    <span class="PuntoPulsante"></span> Danos feedback
+                </a>
+                <a href="#">Soporte Técnico</a>
+            </div>
+
+            <!-- Columna 4: Empresa y Legal -->
+            <div class="FooterColumna">
+                <h4>EMPRESA</h4>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Política de Uso Responsable de IA</a>
+            </div>
+            
         </div>
 
-        <div class="FooterContacto">
-            <h3>Contacto</h3>
-            <p>📧 contacto@flowi.com</p>
-            <p> Medellín, Colombia</p>
-        </div>
-
-        <div class="FooterEnlaces">
-            <h3>Síguenos</h3>
-            <a href="#">Instagram</a>
-            <br>
-            <a href="#">LinkedIn</a>
-            <br>
-            <a href="#">GitHub</a>
+        <!-- Pie del Footer (Bottom Base) -->
+        <div class="FooterBase">
+            <p>© 2026 Softstop. Todos los derechos reservados.</p>
+            <span class="BadgeBeta">Fase Beta Pública — Tu paciencia nos ayuda a mejorar</span>
         </div>
     </footer>
+        
 
+    </main>
+    <script src="js/app.js"></script>
 </body>
 </html>

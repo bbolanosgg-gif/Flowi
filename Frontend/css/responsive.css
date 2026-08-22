@@ -1,210 +1,77 @@
 /* =========================
-   TABLET
+   TABLET (Pantallas medianas)
 ========================= */
-
 @media (max-width: 900px) {
+    
+    /* --- HEADER Y HERO --- */
+    .EncabezadoSoft { padding: 20px 5%; }
+    .TextoCalm, .TextoStop { letter-spacing: 8px; }
+    .TituloPrincipal { letter-spacing: 15px; margin-left: 15px; }
 
-    .BarraDeNavegacion {
-
-        width: calc(100% - 30px);
-
+    /* --- FOOTER TABLET --- */
+    .FooterContenido {
+        grid-template-columns: 1fr 1fr; /* Pasa de 4 a 2 columnas */
     }
-
-    .MenuCentral {
-
-        display: none;
-
+    
+    .FooterColumna.Marca {
+        grid-column: span 2; /* La marca ocupa el ancho de las 2 columnas arriba */
+        align-items: center;
+        text-align: center;
     }
-
-    .Hero {
-
-        width: calc(100% - 30px);
-
-        padding: 60px 25px 40px;
-
+    
+    .Tagline { max-width: 100%; }
+    
+    .FooterBase {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
-
-    .HeroVisual {
-
-        height: 320px;
-
-    }
-
-    .TarjetaHerramienta {
-
-        width: 100px;
-        height: 100px;
-
-        font-size: 42px;
-
-    }
-
-    .FooterPrincipal {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
 }
 
 
 /* =========================
-   CELULAR
+   CELULAR (Pantallas pequeñas)
 ========================= */
-
 @media (max-width: 600px) {
+    
+    /* --- HEADER MÓVIL --- */
+    .EncabezadoSoft { padding: 15px 5%; }
+    .MenuHamburguesa { font-size: 12px; gap: 8px; }
+    .icono-menu { width: 20px; }
+    .enlaceEntrar { font-size: 12px; }
+    .LogoSoftStop img { width: 32px; height: 32px; }
 
-    .BarraDeNavegacion {
-
-        width: calc(100% - 20px);
-
-        margin: 10px auto;
-
-        padding: 10px;
-
+    /* --- HERO MÓVIL --- */
+    .FondoTexto {
+        flex-direction: column; 
+        gap: 200px; 
+        top: 45%; 
     }
-
-    .LogoFlowi img {
-
-        width: 120px;
-
+    .TextoCalm, .TextoStop {
+        letter-spacing: 10px;
+        text-align: center;
+        font-size: clamp(60px, 20vw, 100px); 
     }
-
-    .btnEntrar {
-
-        display: none;
-
+    .TituloPrincipal {
+        letter-spacing: 8px;
+        margin-left: 8px;
+        font-size: 32px; 
+        margin-bottom: -10px; 
     }
+    .ContenedorMedusa { width: 220px; }
+    .ContenedorSubtitulo { bottom: 25px; }
+    .SubtituloHero { font-size: 14px; line-height: 1.6; padding: 0 15px; }
 
-    .botonGrande {
-
-        padding: 10px 17px;
-
-        font-size: 14px;
-
+    /* --- FOOTER MÓVIL --- */
+    .FooterContenido {
+        grid-template-columns: 1fr; /* Todo en 1 sola columna */
+        gap: 40px;
     }
-
-
-    /* Hero */
-
-    .Hero {
-
-        width: calc(100% - 20px);
-
-        min-height: 650px;
-
-        padding: 50px 20px 30px;
-
-    }
-
-    .HeroTitulo {
-
-        font-size: 42px;
-
-    }
-
-    .HeroDescripcion {
-
-        font-size: 17px;
-
-    }
-
-    .HeroVisual {
-
-        height: 270px;
-
-    }
-
-    .IlustracionEstudiante {
-
-        width: 280px;
-
-        height: 220px;
-
-    }
-
-    .TarjetaHerramienta {
-
-        width: 70px;
-
-        height: 70px;
-
-        font-size: 30px;
-
-    }
-
-    .TarjetaHerramienta:nth-child(1) {
-
-        left: 0;
-
-    }
-
-    .TarjetaHerramienta:nth-child(2) {
-
-        right: 0;
-
-    }
-
-    .TarjetaHerramienta:nth-child(3) {
-
-        right: 10%;
-
-    }
-
-    .botonHero {
-
-        margin-top: 0;
-
-        padding: 13px 28px;
-
-    }
-
-
-    /* Footer */
-
-    .FooterPrincipal {
-
-        grid-template-columns: 1fr;
-
-        padding: 30px;
-
-    }
-
-}
-
-/* Añadir dentro de tu @media (max-width: 900px) */
-    .tarjeta-funcion {
-        flex-direction: column-reverse; /* Pone el texto abajo y la imagen arriba */
-        padding: 40px 30px;
+    
+    .FooterColumna {
+        align-items: center;
         text-align: center;
     }
 
-    .contenido-texto {
-        max-width: 100%;
-    }
-
-    .contenido-texto h3 {
-        justify-content: center; /* Centra el título con su icono */
-    }
-
-
-/* Añadir dentro de tu @media (max-width: 600px) */
-    .EncabezadoFunciones h2 {
-        font-size: 32px;
-    }
-    
-    .tarjeta-funcion {
-        padding: 30px 20px;
-    }
-
-    .contenido-texto h3 {
-        font-size: 40px;
-    }
-
-    .contenido-texto p {
-        font-size: 16px;
-    }
-    
-    .carrusel-funciones {
-        gap: 15px;
-    }
+    .FeedbackLink { justify-content: center; }
+}
